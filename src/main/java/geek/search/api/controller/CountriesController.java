@@ -12,7 +12,7 @@ public class CountriesController {
     @Autowired
     private CountryService countryService;
 
-    @GetMapping("/")
+    @GetMapping("/country")
     public Flux<?> getCountries(){
         try {
             return countryService.getCountries();
